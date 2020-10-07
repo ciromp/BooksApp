@@ -17,7 +17,7 @@ class BooksViewModel : ViewModel() {
         //booksLiveData.value = createFakeBooks()
         APIService.service.getBooks().enqueue(object: Callback<BookBodyResponse> {
             override fun onResponse(call: Call<BookBodyResponse>, response: Response<BookBodyResponse>) {
-                
+
             }
 
             override fun onFailure(call: Call<BookBodyResponse>, t: Throwable) {
